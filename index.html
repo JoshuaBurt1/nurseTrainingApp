@@ -1,0 +1,206 @@
+<!--Note: this code is depreciated, needs new updated library and js file jquery syntax-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Medication Steps</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <!--CSS-->
+    <script defer src="cards.js"></script>
+    <!--JS-->
+    <script src="jQueryLib.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <!--
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"
+    ></script>
+    
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"
+    ></script>-->
+  </head>
+  <body>
+    <div id="content">
+      <div class="title">
+        <h1>Oral medication administration steps</h1>
+      </div>
+
+      <div class="cardPile1"></div>
+      <div class="cardSlots1"></div>
+
+      <div class="title">
+        <h1>SubQ medication administration steps</h1>
+      </div>
+
+      <div class="cardPile2"></div>
+      <div class="cardSlots2"></div>
+
+      <div class="title">
+        <h1>IM medication administration steps</h1>
+      </div>
+
+      <div class="cardPile3"></div>
+      <div class="cardSlots3"></div>
+
+      <div class="title">
+        <h1>IV medication administration steps</h1>
+      </div>
+
+      <div class="cardPile4"></div>
+      <div class="cardSlots4"></div>
+
+      <div class="title">
+        <h1>Mental Status Assessment order</h1>
+      </div>
+      <div class="cardPile5"></div>
+      <div class="cardSlots5"></div>
+
+      <div class="title">
+        <h1>Mental health medication match</h1>
+      </div>
+      <div class="cardPile6"></div>
+      <div class="cardSlots6"></div>
+
+      <div class="title">
+        <h1>Dialysis steps (hemodialysis) (hospital)</h1>
+      </div>
+      <div class="cardPile7"></div>
+      <div class="cardSlots7"></div>
+
+      <div class="title">
+        <h1>Dialysis steps (peritoneal) (home)</h1>
+      </div>
+      <div class="cardPile8"></div>
+      <div class="cardSlots8"></div>
+
+      <div class="title">
+        <h1>Starting an IV</h1>
+      </div>
+      <div class="cardPile9"></div>
+      <div class="cardSlots9"></div>
+
+      <div class="title">
+        <h1>SubQ port initiation (butterfly)</h1>
+      </div>
+      <div class="cardPile10"></div>
+      <div class="cardSlots10"></div>
+      <!-- 
+  <div class="title">
+		<h1>IV Pump set-up & troubleshooting (home)</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Patient IV medication admin via intermate (elastomeric pump)</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Kangaroo pump set-up and connect to g-tube</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>TPN (total parenteral nutrition) set-up and connect to central-line</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>PICC line dressing steps</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>PICC line removal steps</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Q4week heparin flush to central line steps</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Q4week heparin flush to central line steps (port-a-cath)</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Head-to-toe assessment order</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Chemo disconnect steps</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Drawing up & preparing medications (palliative)</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Taking vital signs (specific steps)</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Removing staples</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Removing Sutures</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Dressing change</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Nebulizer set-up</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+  <div class="title">
+
+  <div class="title">
+		<h1>Aero-chamber proper application</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div>
+
+  <div class="title">
+		<h1>Insulin administration</h1>
+	</div>
+  <div class="cardPile8"> </div>
+  <div class="cardSlots8"> </div> -->
+
+      <div id="successMessage">
+        <h2>You did it!</h2>
+        <button onclick="init()">Play Again</button>
+      </div>
+    </div>
+  </body>
+</html>

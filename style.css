@@ -1,0 +1,113 @@
+
+.title{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align:center;
+}
+ 
+#content {
+  margin: 80px 70px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.cardPile1, .cardPile2, .cardPile3, .cardPile4, .cardPile5, .cardPile6, .cardPile7, .cardPile8, .cardPile9, .cardPile10  {
+  margin: 0 auto; /*centers cardPile div (top)*/
+  background: #F0F0F0;
+}
+ 
+.cardSlots1, .cardSlots2, .cardSlots3, .cardSlots4, .cardSlots5, .cardSlots6, .cardSlots7, .cardSlots8, .cardSlots9, .cardSlots10 {
+  margin: 20px auto 0 auto; /*centers cardSlot div & margin between cardSlot div & cardPile div (bottom) */
+  background: #F0F0F0;
+}
+
+.cardSlots6, .cardSlots7 {
+    margin: 50px auto 0 auto;
+    background: #F0F0F0;
+    font-size: 10px;
+ }
+
+.cardSlots1, .cardPile1, .cardSlots2, .cardPile2, .cardSlots3, .cardPile3, .cardSlots4, .cardPile4, .cardSlots5, .cardPile5,
+ .cardSlots6, .cardPile6, .cardSlots7, .cardPile7, .cardSlots8, .cardPile8, .cardSlots9, .cardPile9, .cardSlots10, .cardPile10 {
+  width: 1210px;
+  height: 240px;
+  padding: 20px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+.cardSlots1 div, .cardPile1 div, .cardSlots2 div, .cardPile2 div, .cardSlots3 div, .cardPile3 div, .cardSlots4 div, .cardPile4 div, .cardSlots5 div, 
+.cardPile5 div, .cardSlots6 div, .cardPile6 div, .cardSlots7 div, .cardPile7 div, .cardSlots8 div, .cardPile8 div, .cardSlots9 div, .cardPile9 div, 
+.cardSlots10 div, .cardPile10 div{
+  float: left;
+  width: 58px;
+  height: 108px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+  background: #fff;
+}
+ 
+.cardSlots1 div:first-child, .cardPile1 div:first-child, .cardSlots2 div:first-child, .cardPile2 div:first-, .cardSlots3 div:first-child, .cardPile3 div:first-child, 
+.cardSlots4 div:first-child, .cardPile4 div:first-child, .cardSlots5 div:first-child, .cardPile5 div:first-child, .cardSlots6 div:first-child, .cardPile6 div:first-child, 
+.cardSlots7 div:first-child, .cardPile7 div:first-child, .cardSlots8 div:first-child, .cardPile8 div:first-child,
+.cardSlots9 div:first-child, .cardPile9 div:first-child, .cardSlots10 div:first-child, .cardPile10 div:first-child {
+  margin-left: 0;
+}
+
+.cardSlots1 div.hovered, .cardSlots2 div.hovered, .cardSlots3 div.hovered, .cardSlots4 div.hovered, .cardSlots5 div.hovered, .cardSlots6 div.hovered, 
+.cardSlots7 div.hovered, .cardSlots8 div.hovered, .cardSlots9 div.hovered, .cardSlots10 div.hovered {
+  background: #aaa;
+}
+ 
+.cardSlots1 div, .cardSlots2 div, .cardSlots3 div, .cardSlots4 div, .cardSlots5 div, .cardSlots6 div, .cardSlots7 div, .cardSlots8 div,
+.cardSlots9 div, .cardSlots10 div{
+  border-style: dashed;
+}
+
+.cardPile1 div, .cardPile2 div, .cardPile3 div, .cardPile4 div, .cardPile5 div, .cardPile6 div, .cardPile7 div, .cardPile8 div, .cardPile9 div, 
+.cardPile10 div {
+  background: #666;
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 0 0 3px #000;
+}
+ 
+.cardPile1 div.ui-draggable-dragging, .cardPile2 div.ui-draggable-dragging, .cardPile3 div.ui-draggable-dragging, .cardPile4 div.ui-draggable-dragging, 
+.cardPile5 div.ui-draggable-dragging, .cardPile6 div.ui-draggable-dragging, .cardPile7 div.ui-draggable-dragging, .cardPile8 div.ui-draggable-dragging,
+.cardPile9 div.ui-draggable-dragging, .cardPile10 div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+#card1.correct { background: green; }
+ 
+#successMessage {
+  position: absolute;
+  left: 580px;
+  top: 250px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  background: #dfd;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
+}
